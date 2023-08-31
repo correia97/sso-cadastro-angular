@@ -4,7 +4,7 @@ FROM node:19-buster-slim as build-step
 WORKDIR /app
 USER root
 COPY package.json .
-RUN npm install -g @angular/cli@16.1.0 --force && \
+RUN npm install -g @angular/cli@16.2.1 --force && \
         npm install --force
 
 COPY . .
